@@ -1,0 +1,269 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0a2540 0%, #f5f7fa 40%);
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+/* =========================
+   HEADER (HERO SECTION)
+========================= */
+header {
+  background: transparent;
+  padding: 80px 0 50px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: white;
+}
+
+/* =========================
+   PROFILE IMAGE (PRO DESIGN)
+========================= */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   HEADER TEXT
+========================= */
+header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+header p {
+  margin-top: 5px;
+  opacity: 0.85;
+}
+
+/* =========================
+   LINKS (GITHUB, LINKEDIN)
+========================= */
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background: #1e40af;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+h2 {
+  color: #0a2540;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  border-left: 6px solid #2563eb;
+  padding-left: 15px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about p {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-size: 1.05rem;
+}
+
+/* =========================
+   SKILLS GRID
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.grid div {
+  background: linear-gradient(135deg, #2563eb, #0a2540);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+}
+
+.grid div:hover {
+  transform: translateY(-6px);
+}
+
+/* =========================
+   PROJECT CARDS
+========================= */
+.project {
+  background: white;
+  padding: 28px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+}
+
+.project h3 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   EXPERIENCE & EDUCATION
+========================= */
+.experience-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+}
+
+/* =========================
+   COMPANY LOGOS
+========================= */
+.company-logo {
+  width: 90px;
+  height: auto;
+  filter: grayscale(20%);
+}
+
+/* =========================
+   CERTIFICATES & LANGUAGES
+========================= */
+.certificates ul {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.certificates li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.languages p {
+  background: linear-gradient(135deg, #2563eb, #0a2540);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   WHATSAPP FLOATING BUTTON
+========================= */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: white;
+  font-size: 30px;
+  padding: 16px 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.15);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
